@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1a854d005c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="\css\style.css">
+    <link rel="stylesheet" href="\css\registro.css">
     <title>Mercado Liebre - Registro</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header1">
-            <img src="/img/logo-mercado-liebre.svg" alt="Logo" class="logo">
+            <a class="img-logo" href="/"><img src="/img/logo-mercado-liebre.svg" alt="Logo" class="logo"></a>
             <div class="inputContainer">
                 <input type="text" class="form-control" placeholder="Buscar productos">
                 <button class="btn btn-outline-secondary" type="button"><i
@@ -22,5 +25,36 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="card-register">
+            <div class="container">
+                <div class="formulario">
+                    <form action="">
+                        <h2>Crear cuenta</h2>
+                        <div class="input-contenedor">
+                            <input type="text" name="name" id="name" required>
+                            <label for="name">Nombres</label>
+                        </div>
+                        <div class="input-contenedor">
+                            <input type="text" name="last-name" id="last-name" required>
+                            <label for="last-name">Apellidos</label>
+                        </div>
+                        <div class="input-contenedor">
+                            <input type="email" name="mail" id="mail" required>
+                            <label for="mail">Correo</label>
+                        </div>
+                        <div class="input-contenedor">
+                            <input type="password" name="password" id="password" required>
+                            <label for="password">Contraseña</label>
+                        </div>
+                        <div>
+                            <button class="create-account-button">Crear cuenta</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
