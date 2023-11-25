@@ -4,8 +4,10 @@ const path = require('path');
 
 app.use(express.static('public'));
 
-app.listen(3000, () => {
-    console.log('Servidor OK: http://localhost:3000');
+const port = process.env.PORT || 3030;
+
+app.listen(port, () => {
+    console.log(`Servidor OK:${port}`);
 });
 
 app.get("/", (req, res) =>{
